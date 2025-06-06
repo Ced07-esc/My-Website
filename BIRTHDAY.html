@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	      <meta charset="utf-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<title>My Birthday</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	      <link rel="stylesheet" type="text/css" href="style.css">
+	      <style type="text/css">
+        		table {
+           border: 1.5px solid black;
+			           padding: 10px;
+			           text-align: center;
+			           background-color: transparent;
+			           border-collapse: collapse;
+           			width: 100%;
+		     }
+	         	td, th {
+           		border: 1.5px solid black;
+	         	  font-weight: bold;
+           			padding: 20px;
+			           text-align: center;
+	         	}
+	         	th {
+           			background-color: #4A89DC;
+         	  color: white;
+     }
+	         		body {
+	
+			           background-size: cover;
+			           background-repeat: no-repeat;
+     		}
+         h2 {
+           			font-size: 20px;
+			           font-weight: bold;
+			           text-align: center;
+           color: white;
+     		}
+         		#ced {
+           			background-color: red;
+            cursor: pointer;
+            background-image: url('ced.jpg');
+            background-size: cover;
+            background-position: center;
+            color: deepskyblue;
+         		}  		           
+         		.video-container {
+  position: fixed;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+           
+.verse-highlight {
+		color: darkseagreen;
+		text-shadow: 1px 1px 10px
+		lightgoldenrodyellow;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+           
+	.verse-highlight2 {
+		color: lightyellow;
+		text-shadow: 1px 1px 10px
+		lightgoldenrodyellow;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 1.2em;
+		font-family: 'Brush Script MT', cursive;
+	}
+           
+         	.cde {
+           color: red;
+     	}
+         .esc {
+           color: lime;
+     }
+		         a:hover {
+           			color: lightgoldenrodyellow;     			
+		     }            
+   .navbar-nav .nav-link {
+  color: #ff4500; /* orange-red baka dik tu ammu nagan nan hahaha */
+}
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* lighter red on hover */
+}        
+</style>
+     <script>
+        function showMessage() {
+                 alert("Happy Birthday!! I hope there will be more blessing to come! ");
+                 var audio = new Audio('Memories.mp3');
+                 audio.play();
+      } 
+        function showMessage1() {
+                   alert("Have blessed Sunday! Enjoy the day with your Family and may have rest to this Sabbath day.");
+                   var audio = new Audio('Oceans (where feet may fail).mp3');
+                   audio.play();
+        }
+           function showMessage2() {
+                   alert("New Moon");
+           } 
+           function showMessage3() {
+                   alert("First Quarter Moon");
+           }
+           function showMessage4() {
+                   alert("Full Moon");
+           } 
+           function showMessage5() {
+                   alert("Third Quarter Moon");
+           }         
+     </script>
+</head>
+<body>
+           
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="ced1by1.jpg" alt="Profile" width="30" height="35" style="rounded-circle"> Cedie Escalante</a>
+      <a class="navbar-brand" href="https://www.facebook.com/share/1FnYXbjEBN/"><img src="FB_logo.png" alt="FB" width="30" height="30"></a>
+      <a class="navbar-brand" href="https://www.instagram.com/str4y_ced?igsh=MWk3MHFwY2wyZzRhMQ=="><img src="IG_logo.png" alt="IG" width="30"></a>
+      <a class="navbar-brand" href="https://www.tiktok.com/@cedieescalante"><img src="Tiktok_logo.png" alt="Tiktok" width="30" length="30" class="rounded-3"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ACTIVITY1.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="ABOUTME.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="SKILLS.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="HOBBIES.html">HOBBIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="CONTACT.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="EDUCATION.html">EDUCATION</a></li>
+        </ul>
+      
+      <form class="d-flex ms-3 position-relative" role="search" onsubmit="searchSite(); return false;">
+  <input class="form-control me-2 pe-5" type="search" id="searchInput" placeholder="Search..." aria-label="Search">
+  
+  <button type="button" onclick="document.getElementById('searchInput').value=''" 
+          style="position: absolute; right: 60px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 25px; color: #888; cursor: pointer;">
+    &times;
+  </button>
+
+  <button class="btn p-1" type="submit" style="background-color: white; border: 1px solid #ccc; border-radius: 5px;">
+    <img src="search_button.png" alt="Search" width="35" height="35">
+  </button>
+</form>
+               
+    </div>
+  </div>
+</nav>
+
+<script>
+  function searchSite() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    if (query.includes("home")) {
+      window.location.href = "ACTIVITY1.html";
+    } else if (query.includes("about")) {
+      window.location.href = "ABOUTME.html";
+    } else if (query.includes("skills")) {
+      window.location.href = "SKILLS.html";
+    } else if (query.includes("hobbies")) {
+      window.location.href = "HOBBIES.html";
+    } else if (query.includes("contact")) {
+      window.location.href = "CONTACT.html";
+    } else if (query.includes("education")) {
+      window.location.href = "EDUCATION.html";
+    } else if (query.includes("birthday")) {
+      window.location.href = "BIRTHDAY.html";
+    } else {
+      alert("No matching page found!");
+    }
+  }
+</script>
+           
+<section id="HOME">
+</section>
+<section id="ABOUT ME"> </section>
+           
+	<h1 style="text-align: center; color: red;">JULY 2005</h1>
+
+<table>
+       	<tr>
+		           <th class="cde">Sun</th>
+           		<th>Mon</th>
+		           <th>Tue</th>
+           		<th>Wed</th>
+           		<th>Thu</th>
+		           <th>Fri</th>
+           		<th>Sat</th>
+       	</tr>
+       	<tr>
+		           <td><img src="new moon.jpg" alt="Description" width="25" height="25"></td>
+		           <td><img src="first quarter.jpg" alt="Description" width="25" height="25"></td>
+		           <td></td>
+		           <td></td>
+           		<td></td>
+           		<td>1</td>
+           		<td>2</td>
+       	</tr>
+       	<tr>
+		           <td class="cde" onclick="showMessage1()">3</td>
+           		<td>4</td>
+		           <td>5</td>
+           		<td class="esc" onclick="showMessage2()">6</td>
+		           <td>7</td>
+           		<td>8</td>
+		           <td>9</td>
+		
+       	</tr>
+       	<tr>
+		    		       <td class="cde" onclick="showMessage1()">10</td>
+    		       <td>11</td>
+           		<td>12</td>
+           		<td>13</td>
+           		<td class="esc" onclick="showMessage3()"><img src="">14</td>
+           		<td	>15</td>
+    		       <td id="ced" onclick="showMessage()"><a href="">16</a></td>
+       	</tr>
+       	<tr>
+           		<td class="cde" onclick="showMessage1()">17</td>
+           		<td>18</td>
+           		<td>19</td>
+		           <td>20</td>
+		           <td class="esc" onclick="showMessage4()">21</td>
+		           <td>22</td>
+		           <td>23</td>
+	       </tr>
+	       <tr>
+           		<td class="cde" onclick="showMessage1()">24</td>
+           		<td>25</td>
+           		<td>26</td>
+           		<td>27</td>
+           		<td class="esc" onclick="showMessage5()">28</td>
+           		<td>29</td>
+           		<td>30</td>
+       	</tr>
+       	<tr>
+           		<td class="cde"onclick="showMessage1()">31</td>
+           		<td></td>
+		           <td></td>
+           		<td></td>
+           		<td></td>
+           		<td><img src="full moon.jpg" alt="Description" width="25" height="25"></td>
+           		<td><img src="third quarter.jpg" alt="Description" width="25" height="25"></td>
+       	</tr>
+	</table>
+
+     <h2 class="verse-highlight" style="text-decoration: underline;">Philippians 4:13</h2>
+	
+     	<p class="verse-highlight2">"I can do all things, through Christ who strengthens me."</p>
+           <div class= "video-container">
+                      <video autoplay muted loop>
+                                 <source src="ae86drift.mp4" type="video/mp4">
+                                 Your browser does not support the video tag
+                      </video>
+           </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

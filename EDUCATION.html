@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY EDUCATION</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+ table {
+           border: 1.5px solid black;
+			           padding: 10px;
+			           text-align: center;
+			           background-color: transparent;
+			           border-collapse: collapse;
+           			width: 100%;
+		     }
+	         	td, th {
+           		border: 1.5px solid black;
+	         	  font-weight: bold;
+           			padding: 20px;
+			           text-align: center;
+	         	}
+	         	th {
+           			background-color: transparent;
+         	  color: white;
+     }
+	         		body {
+	
+			           background-size: cover;
+			           background-repeat: no-repeat;
+     		}
+  h1, h2, h3, h4{
+			text-align: center;
+		}
+		body{
+padding-top: 56px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		background-image: url('Sunset.jpg');
+		background-position: center;
+		}
+.navbar-nav .nav-link {
+  color: #ff4500; /* orange-red baka dik tu ammu nagan nan hahaha */
+}
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* lighter red on hover */
+}
+	.navbar-nav .nav-link_active {
+  color: #FFFF00;
+}
+.navbar-nav .nav-link_active:hover {
+  color: #FAFAD2;  
+}
+  #ASC {
+  background-color: yellow;
+            cursor: pointer;
+            background-image: url('ASC_logo.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: darkblue;
+  }
+  #LNHS {
+  background-color: red;
+            cursor: pointer;
+            background-image: url('LNHS_logo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: darkred;
+  }
+  #BNHS {
+  background-color: white;
+            cursor: pointer;
+            background-image: url('BNHS_logo.png');
+            background-size: cover;
+            background-position: center;
+            color: skyblue;
+  }
+  #LES {
+  background-color: white;
+            cursor: pointer;
+            background-image: url('LES_logo.jpg');
+            background-size: cover;
+            background-position: center;
+            color: Grey;
+  }
+  </style>
+  <script>
+  </script>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="ced1by1.jpg" alt="Profile" width="30" height="35" class="rounded-circle"> Cedie Escalante</a>
+      <a class="navbar-brand" href="https://www.facebook.com/share/1FnYXbjEBN/"><img src="FB_logo.png" alt="FB" width="30" height="30"></a>
+      <a class="navbar-brand" href="https://www.instagram.com/str4y_ced?igsh=MWk3MHFwY2wyZzRhMQ=="><img src="IG_logo.png" alt="IG" width="30"></a>
+      <a class="navbar-brand" href="https://www.tiktok.com/@cedieescalante"><img src="Tiktok_logo.png" alt="Tiktok" width="30" length="30" class="rounded-3"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ACTIVITY1.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="ABOUTME.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="SKILLS.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link" href="HOBBIES.html">HOBBIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="CONTACT.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link_active" href="EDUCATION.html">EDUCATION</a></li>
+        </ul>
+      
+<form class="d-flex ms-3 position-relative" role="search" onsubmit="searchSite(); return false;">
+  <input class="form-control me-2 pe-5" type="search" id="searchInput" placeholder="Search..." aria-label="Search">
+  
+  <button type="button" onclick="document.getElementById('searchInput').value=''" 
+          style="position: absolute; right: 60px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 25px; color: #888; cursor: pointer;">
+    &times;
+  </button>
+
+  <button class="btn p-1" type="submit" style="background-color: white; border: 1px solid #ccc; border-radius: 5px;">
+    <img src="search_button.png" alt="Search" width="35" height="35">
+  </button>
+</form>
+               
+    </div>
+  </div>
+</nav>
+
+<script>
+  function searchSite() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    if (query.includes("home")) {
+      window.location.href = "ACTIVITY1.html";
+    } else if (query.includes("about")) {
+      window.location.href = "ABOUTME.html";
+    } else if (query.includes("skills")) {
+      window.location.href = "SKILLS.html";
+    } else if (query.includes("hobbies")) {
+      window.location.href = "HOBBIES.html";
+    } else if (query.includes("contact")) {
+      window.location.href = "CONTACT.html";
+    } else if (query.includes("education")) {
+      window.location.href = "EDUCATION.html";
+    } else if (query.includes("birthday")) {
+      window.location.href = "BIRTHDAY.html";
+    } else {
+      alert("No matching page found!");
+    }
+  }
+</script>
+  
+  <table>
+    <tr>
+      <th>Level</th>
+      <th>School</th>
+      <th>Year Graduated</th>
+    </tr>
+    <tr>
+      <td>College</td>
+      <td id="ASC"><a href="https://asc.edu.ph">Apayao State College</a></td>
+      <td>August 2023 - Present</td>
+    </tr>
+    <tr>
+      <td>Senior High</td>
+      <td id="LNHS"><a href="https://sites.google.com/deped.gov.ph/lnhs67">Libertad National Highschool</a></td>
+      <td>Septemeber 2021 - July 2023</td>
+    </tr>
+    <tr>
+      <td>Junior High</td>
+      <td id="LNHS"><a href="https://sites.google.com/deped.gov.ph/lnhs67">Libertad National Highschool</a></td>
+      <td>June 2018 - April 2021</td>
+    </tr>
+    <tr>
+      <td>Junior High</td>
+      <td id="BNHS"><a href="https://sites.google.com/deped.gov.ph/ballesterosnhs">Ballesteros National Highschool</a></td>
+      <td>June 2017 - April 2018</td>
+    </tr>
+    <tr>
+      <td>Elementary</td>
+      <td id="LES"><a href="https://sites.google.com/deped.gov.ph/102342">Lucban Elementary School</a></td>
+      <td>June 2011 - April 2016</td>
+    </tr>
+  </table>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

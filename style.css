@@ -1,0 +1,204 @@
+li {
+    list-style: none;
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+li img {
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+li img:hover {
+    transform: rotate(10deg);
+}
+
+i {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease-in-out;
+}
+
+i:hover {
+    color: #ff6347; /* Tomato color */
+}
+
+b {
+    text-decoration: none;
+    color-scheme: light;
+    transition: color 0.3s ease-in-out;
+}
+
+b:hover {
+    color: #FFFF00; /* Yellow */
+}
+
+p {
+    text-decoration: none;
+    color-scheme: light;
+    transition: color 0.3s ease-in-out;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgba(40, 40, 40, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.clickable-image{
+    position: right;
+    bottom: 100px;
+    right: 100;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0,3s; ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    animation: blinkColor 0.5s infinite;
+  }
+
+  @keyframes blinkColor {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+
+body {
+    background-image: url('');
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   color: white;
+   text-shadow: 1px 1px 2px black;
+   display: flex;
+   justify-content: center;  
+   align-items: center;      
+   text-align: center;
+   height: 100vh;            
+   flex-direction: column;
+   animation: backgroundFade 5s infinite alternate;
+}
+
+@keyframes backgroundFade {
+    from {
+        filter: brightness(1);
+    }
+    to {
+        filter: brightness(0.8);
+    }
+}
+
+
+
+.skill-icon {
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 10px;
+    border-radius: 10px;
+}
+.hobby-icon {
+  width: 50px; 
+  height: 50px;
+  margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.circular {
+  --progress: 0;
+  --percentage: 100;
+  --bar-color: black;
+    position: relative;
+    z-index: 1;
+    
+    place-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(var(--bar-color) calc(var(--progress) * 1%), #333 0%);
+  animation: fillCircle 2s ease-out forwards;
+  position: relative;
+}
+
+.circular-bg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  opacity: 0.2; /* Faint background effect */
+  object-fit: contain;
+  z-index: 0;
+}
+
+.circular::before {
+  content: calc(var(--percentage) * 1%) '%';
+  color: white;
+  font-weight: bold;
+  position: absolute;
+}
+
+@keyframes fillCircle {
+  from {
+    --progress: 0;
+  }
+  to {
+    --progress: var(--percentage);
+  }
+}
+
+@property --progress {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+ }  

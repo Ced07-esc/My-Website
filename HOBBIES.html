@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOBBIES</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+				
+  h1 {
+    			text-align: center;
+}
+
+  .navbar-nav .nav-link {
+  color: #ff4500; /* orange-red baka dik tu ammu nagan nan hahaha */
+}
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* lighter red on hover */
+}
+  .navbar-nav .nav-link_active {
+  color: #FFFF00;
+}
+.navbar-nav .nav-link_active:hover {
+  color: #FAFAD2; 
+}           
+.video-container {
+  position: fixed;
+  top: 0;
+  Left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 20px;
+}
+           .hobby-section {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    .hobby {
+      background-color: rgba(30, 30, 30, 0.85);
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      width: 150px;
+    }
+
+    .hobby-name {
+      font-size: 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+           
+    .red   { --bar-color: #ff4d4d; --percentage: 90; }
+    .green { --bar-color: #28a745; --percentage: 80; }
+    .yellow { --bar-color: #ffc107; --percentage: 70; }
+    .blue  { --bar-color: #007bff; --percentage: 85; }
+    .cyan  { --bar-color: #17a2b8; --percentage: 75; }
+    .orange { --bar-color: #fd7e14; --percentage: 88; }
+    .amethyst { --bar-color: #9966cc; --percentage: 85; }
+    .neon-yellow { --bar-color: #e4ff1a; --percentage: 90; }
+
+	</style>
+</head>
+<body>
+           
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="ced1by1.jpg" alt="Logo" width="30" height="35" class="rounded-circle">  Cedie Escalante</a>
+      <a class="navbar-brand" href="https://www.facebook.com/share/1FnYXbjEBN/"><img src="FB_logo.png" alt="FB" width="30" height="30"></a>
+      <a class="navbar-brand" href="https://www.instagram.com/str4y_ced?igsh=MWk3MHFwY2wyZzRhMQ=="><img src="IG_logo.png" alt="IG" width="30"></a>
+      <a class="navbar-brand" href="https://www.tiktok.com/@cedieescalante"><img src="Tiktok_logo.png" alt="Tiktok" width="30" length="30" class="rounded-3"></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="ACTIVITY1.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="ABOUTME.html">ABOUT ME</a></li>
+          <li class="nav-item"><a class="nav-link" href="SKILLS.html">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link_active" href="HOBBIES.html">HOBBIES</a></li>
+          <li class="nav-item"><a class="nav-link" href="CONTACT.html">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="EDUCATION.html">EDUCATION</a></li>
+        </ul>
+      
+         <form class="d-flex ms-3 position-relative" role="search" onsubmit="searchSite(); return false;">
+  <input class="form-control me-2 pe-5" type="search" id="searchInput" placeholder="Search..." aria-label="Search">
+  
+  <button type="button" onclick="document.getElementById('searchInput').value=''" 
+          style="position: absolute; right: 60px; top: 50%; transform: translateY(-50%); background: none; border: none; font-size: 25px; color: #888; cursor: pointer;">
+    &times;
+  </button>
+
+  <button class="btn p-1" type="submit" style="background-color: white; border: 1px solid #ccc; border-radius: 5px;">
+    <img src="search_button.png" alt="Search" width="35" height="35">
+  </button>
+</form>
+               
+    </div>
+  </div>
+</nav>
+
+<script>
+  function searchSite() {
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    if (query.includes("home")) {
+      window.location.href = "ACTIVITY1.html";
+    } else if (query.includes("about")) {
+      window.location.href = "ABOUTME.html";
+    } else if (query.includes("skills")) {
+      window.location.href = "SKILLS.html";
+    } else if (query.includes("hobbies")) {
+      window.location.href = "HOBBIES.html";
+    } else if (query.includes("contact")) {
+      window.location.href = "CONTACT.html";
+    } else if (query.includes("education")) {
+      window.location.href = "EDUCATION.html";
+    } else if (query.includes("birthday")) {
+      window.location.href = "BIRTHDAY.html";
+    } else {
+      alert("No matching page found!");
+    }
+  }
+</script>
+
+<section id="HOME">
+</section>
+
+<section id="ABOUT ME">
+</section>
+ 
+<div class="container hobby-section py-5">  
+  <h1>My Hobbies:</h1>  
+  <div class="row g-4 justify-content-center">  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Playing Guitar</div>  
+        <video controls class="w-100">
+          <source src="guitar.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Cooking</div>  
+        <video controls class="w-100">
+          <source src="cooking-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Slogan & Gothic Making</div>  
+        <video controls class="w-100">
+          <source src="slogan-making-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Photography & Videography</div>  
+        <video controls class="w-100">
+          <source src=".mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Writing Poems and Quotes</div>  
+        <video controls class="w-100">
+          <source src="poems-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+    <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Listening to Music</div>  
+        <video controls class="w-100">
+          <source src="music-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+             
+      <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Traveling</div>  
+        <video controls class="w-100">
+          <source src="travel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  
+     <div class="col-6 col-md-4 col-lg-2">  
+      <div class="hobby text-center">  
+        <div class="hobby-name mb-2">Jamming</div>  
+        <video controls class="w-100">
+          <source src="liveband2025.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>  
+    </div>  
+  </div>  
+</div>
+   
+           
+<div class= "video-container">
+                      <video autoplay muted loop>
+                                 <source src="waterfall.mp4" type="video/mp4">
+                                 Your browser does not support the video tag
+                      </video>
+           </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
